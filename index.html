@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>stampedestarters.net </title>
+        <script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
 <style>
-body {background-color: Violet;}
+body {background-color: Magenta;}
 h1 {
     color:DarkRed;
 }
@@ -37,5 +39,13 @@ You notice a small/large group of people forming. It's safe to assume that they'
 <h2>What can you do?</h2>
 <p>Join the Stampede Starters and invite others to do the same</p>
 <font size=10>WE NEED YOU! JOIN TODAY!</font>
+
+    <div class="box">    
+        <label for="qty"><abbr title="Quantity">Qty</abbr></label>
+        <input id="qty" value="0" />
+        <button id="down" onclick="modify_qty(-1)">-1</button>
+        <button id="up" onclick="modify_qty(1)">+1</button>
+    </div>
+<p>If you have made a video or website about coding, thank you!</p>
     </body>
 </html>
