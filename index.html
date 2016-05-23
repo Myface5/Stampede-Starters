@@ -2,17 +2,17 @@
 <html>
     <head>
         <title>stampedestarters.net </title>
-        <script type="text/javascript" src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
 <style>
-body {background-color: Magenta;}
+body {background-color: Lavender;}
 h1 {
     color:DarkRed;
 }
 h2 {
     color:LightSeaGreen;
 }
+h3 {
+    color:LightBlue;
 </style>
 
 
@@ -38,31 +38,7 @@ You notice a small/large group of people forming. It's safe to assume that they'
 <p>The bigger the group, the better the charge</p>
 <h2>What can you do?</h2>
 <p>Join the Stampede Starters and invite others to do the same</p>
-<font size=10>WE NEED YOU! JOIN TODAY!</font>
-
-    <div class="box">    
-        <label for="qty"><abbr title="Quantity">Qty</abbr></label>
-        <input id="qty" value="0" />
-        <button id="down" onclick="modify_qty(-1)">-1</button>
-        <button id="up" onclick="modify_qty(1)">+1</button>
-    </div>
-    <?php
-    $likeFile = 'like.txt';
-    /* check if the like file exists*/
-    if(file_exists($likeFile)) {
-        /* read the only the first file of the file as we don't intend to have more */
-        $file = fopen($likeFile, 'r');
-        $like = fgets($file);
-        fclose($file);
-        if($like) {
-            /* if we get the line split the string "likes=number" and get the existing count */
-            $likeCount = end(explode('=', $like));
-        }
-    } else {
-        $likeCount = 0;
-    }
-?>
-<a href="javascript:void(0)" onclick="like()">Like <span id="count"><?php echo $likeCount ?></span></a>
+<font size=10>WE NEED YOU! JOIN TODAY!</font><a href="javascript:void(0)" onclick="like()">Like <span id="count"><?php echo $likeCount ?></span></a>
 
 <p>If you have made a video or website about coding, thank you!</p>
     </body>
